@@ -1,4 +1,4 @@
-== PageRank with Phoenix and Spark ==
+== PageRank with Phoenix and Spark
 
 Although Phoenix has lots of great analytics utility built-in, certain tasks, such as graph processing, are much more
 suited for external engines, such as Spark's GraphX.
@@ -10,12 +10,12 @@ back to Phoenix.
 
 [1] https://snap.stanford.edu/data/email-Enron.html
 
-=== Prerequisites ===
+=== Prerequisites
 
 * Setup Phoenix 4.4.0+
 * Setup Spark 1.3.0+ (ensure phoenix-client JAR is in the Spark driver classpath)
 
-=== Load sample data ===
+=== Load sample data
 
 Login to node with Phoenix installed:
 
@@ -39,7 +39,7 @@ gunzip /tmp/enron.csv.gz
 ./psql.py -t EMAIL_ENRON localhost /tmp/enron.csv
 ```
 
-=== Compile and Execute ===
+=== Compile and Execute
 
 Compile
 ```
